@@ -1,0 +1,118 @@
+/*Referente ao formulário de cadastramento de um novo livro*/
+section .cadastro{
+    width: 98%;
+    margin: 50px 0px 50px 1%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 2px -1px rgba(0,0,0,1);
+}
+/*Titulo do cadastro*/
+section .cadastro h3{
+    background-color: #1F4F66;
+    color: #fff;
+    border-radius: 20px 20px 0px 0px;
+    line-height: 50px;
+    font-size: 18.5pt;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 0px;
+}
+/*Dimensionamento do formulário*/
+section .cadastro form{
+    display: flex;
+    flex-direction: column;
+    width: 96%;
+    margin: 0px 2% 0px 2%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-grow: 1;
+}
+/*Sub-titulos do formulário*/
+section .cadastro h4{
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    display: flex;
+    font-size: 13.5pt;
+    margin: 10px 0px 5px 0px;
+}
+/*Linha abaixo do sub-titulo*/
+section .cadastro hr{
+    border: 1px solid #eeeeee;
+    width: 100%;
+    margin: 0px 0px 20px 0px;
+}
+/*Dimensionamento da básica*/
+section .c1{
+    margin-left: 2%;
+}
+/*Labels*/
+section .cadastro label{
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    font-size: 13.5pt;
+    font-weight: 400;
+}
+/*Cor do placeholder do input search do menu horizontal*/
+section .cadastro  input::-webkit-input-placeholder, section .cadastro textarea::-webkit-input-placeholder {
+    color: #333;
+}
+/*inputs*/
+section .cadastro  input{
+    border:none;
+    border-bottom: 2px solid #1F4F66;
+    color: #333;
+    margin-bottom: 10px;
+    border-radius: 0px;
+    font-size: 12pt;
+    font-weight: 400;
+    width: 420px;
+    outline: none;
+    padding: 6px 20px 6px 10px;
+}
+/*TextArea e Select*/
+section .cadastro  select, section textarea{
+    border:none;
+    outline: none;
+    border-bottom: 2px solid #1F4F66;
+    color: #333;
+    font-size: 12pt;
+    font-family: 'Montserrat', sans-serif;
+    width: 450px;
+    padding: 6px 20px 6px 10px;
+    resize: none;
+}
+
+/*Titulo 2*/
+section .cadastro .t2{
+    margin-top: 30px;
+}
+/*TextArea*/
+section textarea{
+    border: 2px solid #1F4F66;
+    width: 420px;
+    margin:10px 0px 10px 0px;
+}
+
+/*Botão de submit*/
+section .btn{
+    outline: none;
+    border: none;
+    margin: 30px 30% 30px 30%;
+    height: 50px;
+    font-size: 14pt;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    background-image: linear-gradient(to right, #1F4F66,#154358,#1F4F66);
+    border-radius: 50px;
+    background-size: 200%;
+    transition: .5s;
+    width: 40%;
+}
+section .btn:hover{
+    background-position: right;
+}
+/*Espaçamento entre Icone e texto*/
+section .cadastro h4 i{
+    margin-right: 5px;
+}

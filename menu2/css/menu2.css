@@ -1,0 +1,44 @@
+section aside{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    height: 55px;
+    align-items: center;
+    width:100%
+}
+section aside a{
+    color:#333;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    font-size: 15pt;
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    width: 100%;
+}
+section aside h4{
+    text-align: center;
+}
+section aside .p1,section aside .p2, section aside .p3{
+    display: flex;
+    flex: 1;
+    text-align: center;
+    flex-grow: 1;
+    width: calc(100%/3);
+    height: 55px;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom: 1px solid #ddd;
+    transition: ease-in-out .2s;
+}
+section aside .p1{
+    border: 1px solid #ddd;
+    border-bottom: none;
+    color: #23527c;
+}
+.p2:hover{
+    background-color: #ddd !important;
+    transition: ease-in-out .2s !important;
+}

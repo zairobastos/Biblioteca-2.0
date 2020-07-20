@@ -1,0 +1,25 @@
+/*Parte das instuções referente ao cadastramento de um novo livro*/
+section .instrucoes{
+    background-color: #FBE25B;
+    width: 98%;
+    border-radius: 20px;
+    padding: 1px 0px 30px 0px;
+    margin: 60px 0px 0px 1%;
+}
+/*Título das instruções*/
+section .instrucoes h4{
+    text-align: center;
+    font-size: 24pt;
+    font-family: 'Nunito', sans-serif;
+    color: #3e3e3e;
+    margin: 30px 0px 40px 0px;
+}
+/*Referente a cada instrução*/
+section .instrucoes p{ 
+    text-align: justify;
+    margin:0px 40px 5px 40px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #3e3e3e;
+    font-family: 'Nunito', sans-serif;
+}

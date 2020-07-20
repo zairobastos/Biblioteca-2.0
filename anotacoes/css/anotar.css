@@ -1,0 +1,97 @@
+#anotar{
+    background-color: #F8F8F8;
+    width: 0px;
+    position: fixed;
+    z-index: 100;
+    height: 100%;
+    right: 0px;
+    flex-direction: column;
+    box-shadow: -3px 0 12px rgba(0, 0, 0, .16);
+    transition: all ease .5s;
+    padding: 0px;
+    margin: 0px;
+}
+#anotar h3{
+    font-family: 'Montserrat';
+    font-size: 15.5pt;
+    font-weight: 400;
+    text-align: center;
+    color: #373737;
+    top: 30px; 
+    width: 100%;
+}
+#anotar p i{
+    font-size: 14pt;
+    color: #989898;
+    top: 20px;
+    right: 0px;
+    cursor: pointer;
+    margin-left: 20px;
+}#anotar div{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+}
+#anotar div p{
+    max-height: 560px;
+    width: 310px;
+    height: 210px;
+    text-align: center;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 12px 15px 20px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: auto;
+    color: #656565;
+    z-index: 10;
+    margin: 0px 15px 0px 15px;
+}
+#anotar div p textarea{
+    height: 120px;
+    width: 260px;
+    border: 2px solid #fff;
+    resize: none;
+    outline: none;
+    margin-top: 45px;
+    align-self: center;
+    background-image: url('1px_linha-anotacao.png');
+    background-position: 25px 34px;
+    background-repeat: repeat;
+    background-attachment: local;
+    line-height: 40px;
+    padding: 0 5px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    color: #656565;
+}
+#anotar div button{
+    background-color: #fff;
+    border: 2px solid #fff;
+    width: 40px;
+    display: flex;
+    height: 40px;
+    border-radius: 50px;
+    top: 110px;
+    right: 10px;
+    margin:0px 0% -20px 85%;
+    z-index: 30;
+    transition: all .2s ease;
+    transform: scale(1.1);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    outline: none;
+}
+#anotar div button:hover{
+    transition: all .2s ease;
+    box-shadow: 12px 15px 20px rgba(0,0,0,0.1);
+}
+#anotar div button i{
+    justify-content: center;
+    align-items: center;
+    margin: 6px 5px;
+    padding: 0px;
+    font-size: 18px;
+}
+#anotar div p textarea::-webkit-input-placeholder{
+    color: #656565;
+}

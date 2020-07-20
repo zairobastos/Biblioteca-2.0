@@ -1,0 +1,310 @@
+body{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Cor do fundo dos menu*/
+nav{
+    background-color: #1f4f66;
+}
+/*Menu Horizontal*/
+header .horizontal{
+    height: 70px;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    position: fixed;
+    margin-bottom: 5%;
+    z-index: 10;
+    flex-grow: 1;
+}
+header .horizontal h3{
+    color: #0ac5d4;
+    font-size: 18px;
+}
+header .horizontal .marca{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+header .horizontal p{
+    color: #f7f7f7;
+    font-size: 10px;
+    margin-bottom: -15px;
+}
+header .horizontal .logo{
+    padding-left: 5%;
+    display: flex;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+/*PESQUISA*/
+.pesquisa{
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    align-items: center;
+    justify-content: center;
+    padding-right: 10%;
+}
+header .horizontal .pesquisa input{
+    outline:0;
+    width: 400px;
+    padding: 6px 20px 6px 10px;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    border-right: none;
+    border-radius: 50px;
+    color:#ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+header .horizontal .pesquisa button{
+    padding: 6px 10px;
+    margin-left: -20px;
+    background-color: #ffffff;
+    border: #ffffff solid 1px;
+    border-radius: 0px 50px 50px 0px;
+    font-family: 'Montserrat', sans-serif;
+    color:#1f4f66;
+    outline: 0;
+}
+/*Cor do placeholder do input search do menu horizontal*/
+::-webkit-input-placeholder {
+    color: #ffffff;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    color: #ffffff;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    color: #ffffff;  
+}
+
+:-ms-input-placeholder {  
+    color: #ffffff;  
+}
+ 
+/*Div foto*/
+header .horizontal .foto{
+    display: flex;
+    margin: 0px 60px 0px 0px;
+}
+header .horizontal .foto .descricao{
+    margin-right: -80px;
+}
+header .horizontal .foto .descricao p{
+    margin-top: -20px;
+}
+header .horizontal .foto .descricao h4{
+    color: #0ac5d4;
+}
+header .horizontal .foto img{
+    width: 70px;
+    margin-left: 100px;
+    margin-top: -5px;
+}
+    
+
+/*Menu Vertical*/
+.vertical{
+    margin-top: 70px;
+    width: 60px;
+    position: fixed;
+    height: 100%;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    z-index: 10;
+}
+.vertical div{
+    font-size: 24px;
+    height: 70px;
+    width: 92.5%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    transition: .2s cubic-bezier(0.4, 0, 1, 1);
+    z-index: 10;
+
+}
+.vertical a{
+    color: #0AC5D4;
+    text-decoration: none;
+}
+.vertical div:hover{
+    border-left: 4px solid #0AC5D4;
+    background: #2D5E75;
+    transition: .2s cubic-bezier(0.4, 0, 1, 1);
+}
+.vertical .a1 .menu{
+    display: none;
+    z-index: 10;
+}
+/*Texto que refência o que cada ícone significa*/
+.vertical .a1:hover .menu{
+    background: #2d5e75;
+  position: absolute;
+  left: 80px;
+  border-radius: 0 5px 5px 5px;
+  color: #2be2f1;
+  padding: 5px 0px;
+  width: 100px;
+  font-weight: 500;
+  font-size: 11px;
+  text-align: center;
+  transition: .4s linear;
+  z-index: 10;
+  pointer-events: none;
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+}
+/*Seta que referência o ícone*/
+.vertical .a1 .menu:before{
+    width: 0;
+  height: 0;
+  border-top: 0px solid transparent;
+  border-bottom: 14px solid transparent;
+  border-right: 17px solid #2d5e75;
+  content: ' ';
+  box-sizing: border-box;
+  position: absolute;
+  left: -13px;
+  top: 0px;
+}
+div .a1 .menu:hover{
+    display: block;
+}
+/*Data e Hora*/
+.vertical p{
+    color:#2be2f1;
+    font-family: 'Montserrat', sans-serif;
+}
+.vertical .data{
+    margin: 50px 0px 0px 0px;
+}
+.vertical .hora{
+    margin-top: 5px;
+}
+
+
+
+/*Seção do home*/
+section{
+    width: 91%;
+    max-width: 88%;
+    margin-left: 7%;
+    margin-top: 70px;
+    position: absolute;
+    z-index: 1;
+}
+/*Se referênciando no site*/
+section .localizacao{
+    display: flex;
+    align-items: center;
+    width: 96%;
+    margin-left: 2%;
+    justify-content: space-between;
+}
+/*Título*/
+section .localizacao h4{
+    font-size: 19.5pt;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    font-weight: 400;
+}
+/*Primeira letra do Sistema maior que as demais*/
+section .localizacao h4 .maior{
+    font-size: 24.5pt;
+}
+/*Usada para referênciar em qual parte do site o usuário está*/
+section .localizacao h4 .menor{
+    color: #777777;
+    font-size: 14.5pt;
+}
+/*Anotações para o usuário*/
+section .localizacao a{
+    font-size: 13pt;
+    float: right;
+    font-family: 'Montserrat', sans-serif;
+    color: #777777;
+    font-weight: 400;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .2s;
+}
+/*Linha que divide a localização com o conteúdo exposto*/
+section .hr{
+    margin-top: -25px;
+    border: .5px solid #f7f7f7;
+}
+/*Localização na Aba*/
+section .localizacao h4 i{
+    font-size: 15px;
+}
+/*Poup do menu*/
+#info{
+    display: none;
+    visibility: hidden;
+    z-index: 0;
+}
+/*Configuração da classe que é criada*/
+.info{
+    position: fixed;
+    z-index: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #fff;
+    flex-direction: column;
+    border: 1px solid #e4e5ec;
+    width: 160px;
+    right: 0px;
+    margin: 85px 65px 0px 0px;
+    border-radius: 8px;
+}
+/*Titulo: Olá. O que desejas*/
+.info p{
+    font-size: 13pt;
+    text-align: center;
+    margin: 2px 0px 5px 0px;
+}
+/*Linha*/
+.info hr{
+    border: .1px solid #e4e5ec;
+    width: 99%;
+    margin:0px;
+}
+/*Links*/
+.info a{
+    color: #333;
+    text-decoration: none;
+    padding:6px 0px 6px 15px;
+}
+.info a:hover{
+    background-color: #F8F9FA;
+}
+/*Sair do sistema*/
+.info .sair{
+    margin: 0px;
+}
+/**/
+.fechar{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    margin-left: 85%;
+    margin-top: -15px;
+}
+#fecharrr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 5px 0px 0px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    background-color: #fff;
+    border: 1px solid #e4e5ec;
+}
+/*by Zairo Bastos*/
